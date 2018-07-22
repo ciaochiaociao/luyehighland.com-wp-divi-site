@@ -1,0 +1,408 @@
+/*
+ Theme Name:     Divi Child Theme
+ Theme URI: http://www.elegantthemes.com/gallery/divi-child/
+ Description:    Divi Child Theme by Chiao
+ Author:         Chiao
+ Author URI:     
+ Template:       Divi
+ Version:        1.0.0
+*/
+
+@import url("../Divi/style.css");
+@import url('https://fonts.googleapis.com/css?family=Alegreya:500i,700i');
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/* ---- è‡ªè£½å•†æ¨™ START ---- */
+
+/* Logoç½®å·¦ */
+.menu_full_custom > div > a {
+	float: left;
+}
+
+/* Logo å¯¬åº¦ã€ç©ºé–“ (å¤§æ¡Œé¢ç‰ˆ) */
+@media all and (min-width: 980px) {
+	/* Logo å¯¬åº¦ã€ç©ºé–“ */
+	img.full_menu_logo {
+		width: 300px;
+		padding-top:20px;
+	}
+	
+	#gaotai_h1 h1 {
+		padding-top:30px;
+	}
+}
+
+/* Logo å¯¬åº¦ã€ç©ºé–“ (å°æ¡Œé¢ç‰ˆ) */
+@media all and (max-width: 980px) and (min-width: 768px){
+	/* Logo å¯¬åº¦ã€ç©ºé–“ */
+	img.full_menu_logo {
+		width: 300px;
+		padding-top:20px;
+	}
+	#gaotai_h1 h1 {
+		padding-top:25px;
+	}
+}
+
+/* Logo å¯¬åº¦ã€ç©ºé–“ (å¹³æ¿ç‰ˆ) */
+@media all and (max-width: 768px) and (min-width: 480px){
+	img.full_menu_logo {
+		width: 250px;
+		padding-top:20px;
+	}
+}
+
+/* Logo å¯¬åº¦ã€ç©ºé–“ (æ‰‹æ©Ÿç‰ˆ) */
+@media all and (max-width: 480px) and (min-width: 320px) {
+	img.full_menu_logo {
+		width: 250px;
+		padding-top:20px;
+	}
+}
+
+/* ---- è‡ªè£½å•†æ¨™ END ---- */
+
+/* ---- é¦–é æ¸…å–® START ---- */
+
+/* éš±è—åŽŸå§‹WPç½®é ‚æ¸…å–® */
+#main-header {
+    display: none;
+}
+
+/* æ¸…å–®ç™½å­—è‰² (æ‰‹æ©Ÿç‰ˆ) */
+.menu_full_custom span.mobile_menu_bar:before {
+    color: white !important;
+}
+
+/* æ¸…å–®é …ç›®ä¸Šé‚Šè· */
+.fullwidth-menu-nav {
+	padding-top: 16px;
+}
+
+/* æ¸…å–®é‚Šè·ã€å­—é«˜ */
+.et_pb_fullwidth_menu .fullwidth-menu-nav > ul {
+    padding: 14px 0 0 !important;
+    line-height: 1.7em;
+}
+
+/* æ¸…å–®é …ç›®é€£çµé‚Šè·ã€å­—çš„åž‚ç›´å°é½Š */
+.menu_full_custom ul li a {
+	padding: 0.75em 0.5em;
+	vertical-align: middle;
+}
+
+/* æ¸…å–®é …ç›®é€£çµæ‡¸æµ®æ™‚æ¨£å¼ */
+.menu_full_custom ul li a:hover {
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+/* æ¸…å–®é …ç›®ç›®å‰é é¢ä¹‹é€£çµæ¨£å¼ */
+.menu_full_custom ul li.current-menu-item a {
+color: rgba(0,0,0,1) !important;
+background-color: rgba(255,255,255,0) !important;
+opacity: 0.6 !important;
+border-color: thick solid white !important;
+padding: 0.75em 1.6em !important;
+}
+
+/* æ¸…å–®é …ç›®ç¬¬ä¸€å€‹é€£çµå¾Œçš„å½å…ƒç´ ä¸Šä½ç½®è‡ªå‹• */
+.fullwidth-menu .menu-item-has-children > a:first-child:after {
+	top:auto !important;
+}
+
+/* æ‰‹æ©Ÿæ¼¢å ¡æ¸…å–®æ¨£å¼ç½®å³ */
+@media (max-width: 980px){
+	.et_pb_fullwidth_menu .mobile_menu_bar:before {
+	    top: 35px; /* For middle alignment */
+	    float: right;
+	}
+}
+
+/* å°æ‰‹æ©Ÿç‰ˆåž‹logoã€æ¼¢å ¡æ¸…å–®æ¨£å¼èª¿æ•´ */
+@media all and (max-width: 376px){
+    .mobile_menu_bar::before {
+        top: 25px !important;
+    }
+
+    img.full_menu_logo {
+        width: 200px;
+    }
+}
+
+/* ---- é¦–é æ¸…å–® END ---- */
+
+
+/* ---- é¦–é å½±ç‰‡å€å¡Š START ---- */
+
+/* å®šç¾©å¯¬åº¦ã€é«˜åº¦å‡ç‚ºéŸ¿æ‡‰å¼ï¼Œä½†æœ€å°å¯¬åº¦ç‚º320pxã€æœ€å°é«˜åº¦ç‚º568px (å°æ‰‹æ©Ÿç‰ˆ) */
+@media all and (max-width: 320px){
+	.et_pb_section_0 {
+		width: 320px;
+		min-width: 100%;
+		height: 568px;
+		min-height: 100vh;
+	}
+}
+
+/* ---- é¦–é å½±ç‰‡å€å¡Š END ---- */
+
+
+/* --- æœªçŸ¥(é¦–é é é¢ï¼Ÿ) --- */
+
+.et_pb_row {
+	/* position:relative;
+	margin-top:0;
+	margin:auto; */
+}
+
+@media all and (min-width: 981px) {
+	.et_pb_row {
+		/*padding:2% 0;*/
+	}
+}
+
+/* --- æœªçŸ¥ END --- */
+
+/* ---- é€—èŒ¶é é¢æ¸…å–® START ---- */
+
+/* å®šç¾©çŽ‹ç¾²ä¹‹æ›¸æ³•å­—é«” */
+@font-face {
+	font-family: shufa-wxz;
+	src: url("shufa-wxz.ttf");
+}
+@font-face{
+	font-family: shufa-yankai;
+	src: url("shufa-yankai2.ttf");
+}
+
+/* æ›¸æ³•å­—é«” */
+.shufa-wxz {
+	font-family: shufa-wxz, serif;
+}
+.shufa-yankai {
+	font-family: shufa-yankai, serif;
+}
+
+/* Google Font Alegreya */
+.tea-eng-font {
+	font-family: "Alegreya italic", serif;
+	font-weight: 700;
+	font-style: italic;
+	font-kerning: normal;
+	letter-spacing: 1px;
+}
+
+/* ---- é€—èŒ¶é é¢æ¸…å–® END ---- */
+
+
+/* --- å¹³æ¿é¦–é åª’é«”å ±å°Žå€å¡Šæ ¼å¼ START --- */
+@media all and (max-width: 980px) and (min-width: 481px){
+    /* åª’é«”Logoå››æ¬„æ ¼å¼ */
+	#media.et_pb_section .et_pb_column_1_4 {
+		width: 20.875% !important;
+	}
+	/* å„å…ƒç´ é–“è·èª¿æ•´ */
+    #media.et_pb_section .et_pb_column:first-of-type {
+        margin-bottom:initial;
+    }
+    #media.et_pb_section .et_pb_row_4col {
+        padding-top: initial;
+        padding-bottom: initial;
+    }
+    #media_video.et_pb_row {
+        padding-top: initial;
+    }
+	/* æ–°èžLogoå¤§å° */
+	#media.et_pb_section .et_pb_row_4col img {
+		max-width: 80%;
+	}
+}
+/* ç¸®å°é‚Šè·è§£æ±ºåˆ†é æŒ‰éˆ•è·³è¡Œå•é¡Œ */
+@media (min-width: 767px) and (max-width: 803px) {
+	.et_pb_tabs_controls li {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+@media (max-width: 767px) and (min-width: 481px) {
+	/* åˆ†é æŒ‰éˆ•å…§æ–‡å­—ç½®ä¸­ */
+    #media.et_pb_section ul li {
+        text-align: center;
+        padding: 5px;
+    }
+    /* åˆ†é æŒ‰ç´displayå¾žtable-cellæ”¹å›žinline */
+    #media.et_pb_section ul li a {
+        display: initial;
+    }
+}
+
+
+/* --- å¹³æ¿é¦–é åª’é«”å ±å°Žå€å¡Šæ ¼å¼ END --- */
+
+
+/* --- æ‰‹æ©Ÿé¦–é åª’é«”å ±å°Žå€å¡Šæ ¼å¼ START --- */
+@media all and (max-width:480px) {
+    /* åª’é«”Logoå…©æ¬„æ ¼å¼ */
+	#media.et_pb_section .et_pb_column_1_4 {
+        width: 50% !important;
+    }
+}
+/* --- æ‰‹æ©Ÿé¦–é åª’é«”å ±å°Žå€å¡Šæ ¼å¼ END --- */
+
+/* --- æ‰‹æ©Ÿé¦–é åª’é«”å ±å°Žå€å¡Šæ ¼å¼ START --- */
+@media all and (max-width:480px) {
+	/* æ–°èžLogoå¤§å° */
+	#media.et_pb_section .et_pb_row_4col img {
+		max-width: 80%;
+	}
+	/* å„å…ƒç´ é–“è·èª¿æ•´ */
+    #media.et_pb_section .et_pb_column:first-of-type {
+        margin-bottom:initial;
+    }
+    #media.et_pb_section .et_pb_row_4col {
+        padding-top: initial;
+        padding-bottom: initial;
+    }
+    #media_video.et_pb_row {
+        padding-top: initial;
+    }
+    /* åˆ†é æŒ‰éˆ•å…§æ–‡å­—ç½®ä¸­ */
+    #media.et_pb_section ul li {
+        text-align: center;
+        padding: 5px;
+    }
+    /* åˆ†é æŒ‰ç´displayå¾žtable-cellæ”¹å›žinline */
+    #media.et_pb_section ul li a {
+        display: initial;
+    }
+    /* åˆ†é å…§å®¹æ¨™é¡Œ */
+    #media.et_pb_section .et_pb_tabs h1 {
+        font-size: initial !important;
+    }
+}
+/* --- æ‰‹æ©Ÿé¦–é åª’é«”å ±å°Žå€å¡Šæ ¼å¼ END --- */
+
+/* --- æ‰‹æ©Ÿå ±åå€å¡Š --- */
+.mobile_signup .header-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#phone_number .header-content {
+	padding:0px;
+}
+
+/* --- ç˜‹è‰åŽŸé é¢ --- */
+.et_pb_
+.et_pb_section_1::after {
+content: ' ';
+/* position: absolute;
+top: 203px;
+left: 48vw; */
+z-index: 2;
+display: block;
+width: 0px;
+height: 0px;
+margin: auto;
+border-top: 47px solid rgba(180,200,80,0.75);
+border-right: 40px solid transparent;
+border-left: 40px solid transparent;
+}
+
+/* --- ç§»é™¤page-containerä¸Šæ–¹ç©ºç™½80px --- */
+#page-container {
+	padding-top: 0px !important;
+}
+
+#mep_0 mediaelementwrapper video {
+	height:auto !important;
+}
+
+#all-prices-table {
+  /* Reset Default */
+  border: none;
+  /* basic styles */
+  width: 100%;
+  color: #794F9C;
+  font-family: Heiti TC;
+  font-weight: normal;
+  vertical-align: middle; }
+  #all-prices-table th, #all-prices-table td {
+    color: #744c95; }
+  #all-prices-table th {
+    font-weight: bolder;
+    letter-spacing: 2px; }
+    #all-prices-table th big {
+      padding-left: 5px;
+      padding-right: 5px;
+      position: relative;
+      top: 2px;
+      font-size: 1.8rem; }
+    #all-prices-table th[scope="col"] {
+      font-size: 1.7rem;
+      line-height: 1.8em; }
+    #all-prices-table th[scope="row"] {
+      font-size: 1.4rem;
+      line-height: 1.6em;
+      padding: 10px; }
+  #all-prices-table td {
+    padding: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 1.3rem; }
+    #all-prices-table td big {
+      font-size: 1.6rem;
+      position: relative;
+      top: 3px;
+      padding-right: 8px; }
+  #all-prices-table tr:not(:first-child) td:not(:first-child) {
+    text-align: center; }
+
+/* striped */
+.table-2d-striped tr:nth-child(even) {
+  background-color: #c3b4d0;
+  color: #fff; }
+
+/* sass source
+$table-color: #794F9C
+$striped-color: adjust-color($table-color, $saturation:-10%, $lightness:+30%)
+#all-prices-table
+	color: $table-color
+	font-family: Heiti TC
+	font-weight: bolder
+	vertical-align: middle
+	th
+		font-size: 1.2rem
+		padding: 20px
+		font-weight: bold
+		letter-spacing: 2px
+		big
+			padding-left: 5px
+			padding-right: 5px
+			position: relative
+			top: 2px
+			font-size: 1.3rem
+	td
+		padding: 15px
+		letter-spacing: 2px
+		big
+			font-size: 1.6rem
+			position: relative
+			top: 3px
+			padding-right: 8px
+	tr
+		&:not(:first-child)
+			td:not(:first-child)
+				text-align: center
+
+.table-2d-striped
+	tr
+		&:nth-child(even)
+			background-color: $striped-color
+			color: #fff 
+ */
