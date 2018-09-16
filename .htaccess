@@ -1,0 +1,19 @@
+# In /home/luyehig3/public_html/.htaccess
+# BEGIN WordPress
+
+# This section is added to solve the Divi builder timeout issue
+<IfModule mod_substitute.c>
+SubstituteMaxLineLength 10M
+</IfModule>
+# Section Ends
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
